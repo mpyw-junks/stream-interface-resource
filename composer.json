@@ -1,0 +1,32 @@
+{
+    "name": "mpyw/stream-interface-resource",
+    "description": "Create resource stream from PSR-7 StreamInterface implementation",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "mpyw",
+            "email": "ryosuke_i_628@yahoo.co.jp"
+        }
+    ],
+    "keywords": ["stream", "psr-7", "infinite", "iterable", "iterator"],
+    "autoload": {
+        "psr-4": {
+            "Mpyw\\StreamInterfaceResource\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Mpyw\\StreamInterfaceResource\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "^7.1",
+        "guzzlehttp/psr7": "^1.6",
+        "psr/http-message": "^1.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.14",
+        "phpunit/phpunit": "^8.5"
+    }
+}
