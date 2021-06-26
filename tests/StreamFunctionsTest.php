@@ -23,7 +23,7 @@ class StreamFunctionsTest extends TestCase
         $src = StreamInterfaceResource::open("abc\ndef\n");
         $dst = StreamInterfaceResource::open('');
 
-        $this->assertSame(0, stream_copy_to_stream($src, $dst));
+        $this->assertSame(8, stream_copy_to_stream($src, $dst));
     }
 
     /**

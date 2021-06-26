@@ -4,7 +4,7 @@ Create resource stream from PSR-7 StreamInterface implementation.
 
 ## Requirements
 
-- PHP: ^7.1
+- PHP: `^7.1 || ^8.0`
 
 ## Installing
 
@@ -68,3 +68,4 @@ StreamInterfaceResource::open((function () {
 - `fwrite`
 - `rewind`
 - `stream_get_contents`
+- `stream_copy_to_stream`
