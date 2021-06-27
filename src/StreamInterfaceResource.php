@@ -10,7 +10,7 @@ use Psr\Http\Message\StreamInterface;
 abstract class StreamInterfaceResource
 {
     /**
-     * @param null|bool|callable|float|int|\Iterator|resource|StreamInterface|string $resource
+     * @param  null|bool|callable|float|int|\Iterator|resource|StreamInterface|string $resource
      * @return resource
      */
     public static function open($resource = '')

@@ -6,7 +6,7 @@ use Mpyw\StreamInterfaceResource\StreamWrapper\StreamWrapper;
 
 abstract class StreamWrapperRegistrar
 {
-    public static function registerFor(StreamRegistrarInterface $registrar)
+    public static function registerFor(StreamRegistrarInterface $registrar): void
     {
         $protocol = static::protocol($registrar);
 
@@ -15,7 +15,10 @@ abstract class StreamWrapperRegistrar
         }
     }
 
-    public static function unregisterFor(StreamRegistrarInterface $registrar)
+    /**
+     * @codeCoverageIgnore
+     */
+    public static function unregisterFor(StreamRegistrarInterface $registrar): void
     {
         $protocol = static::protocol($registrar);
 

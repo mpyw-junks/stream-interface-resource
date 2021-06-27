@@ -29,7 +29,7 @@ class MemoryUsageTest extends TestCase
 
     public static function performOneCycle(): void
     {
-        /** @noinspection PhpUnhandledExceptionInspection */
+        /* @noinspection PhpUnhandledExceptionInspection */
         StreamInterfaceResource::open(random_bytes(20));
     }
 }

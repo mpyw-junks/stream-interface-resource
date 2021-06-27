@@ -70,7 +70,9 @@ class StreamRegistrar implements StreamRegistrarInterface
     public function pathFor(StreamInterface $stream): string
     {
         if (!$this->streamToPath->contains($stream)) {
+            // @codeCoverageIgnoreStart
             throw new \OutOfBoundsException();
+            // @codeCoverageIgnoreEnd
         }
 
         return $this->streamToPath[$stream];
@@ -79,7 +81,9 @@ class StreamRegistrar implements StreamRegistrarInterface
     public function streamFor(string $path): StreamInterface
     {
         if (!isset($this->pathToStream[$path])) {
+            // @codeCoverageIgnoreStart
             throw new \OutOfBoundsException();
+            // @codeCoverageIgnoreEnd
         }
 
         return $this->pathToStream[$path];

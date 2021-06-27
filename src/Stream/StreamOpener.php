@@ -2,8 +2,6 @@
 
 namespace Mpyw\StreamInterfaceResource\Stream;
 
-use Mpyw\StreamInterfaceResource\Registry\StreamWrapperRegistrar;
-use Mpyw\StreamInterfaceResource\StreamWrapper;
 use Mpyw\StreamInterfaceResource\Registry\StreamRegistrarInterface;
 use Mpyw\StreamInterfaceResource\Unserializable;
 use Psr\Http\Message\StreamInterface;
