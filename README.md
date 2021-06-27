@@ -20,9 +20,9 @@ composer require mpyw/stream-interface-resource
 <?php
 
 use Mpyw\StreamInterfaceResource\StreamInterfaceResource;
-use function GuzzleHttp\Psr7\stream_for;
+use GuzzleHttp\Psr7\Utils;
 
-$fp = StreamInterfaceResource::open(stream_for("a\nbcd\n"));
+$fp = StreamInterfaceResource::open(Utils::streamFor("a\nbcd\n"));
 
 var_dump(fgets($fp)); // "a\n"
 var_dump(feof($fp)); // false
