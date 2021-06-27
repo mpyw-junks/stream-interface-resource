@@ -5,6 +5,7 @@ Create resource stream from PSR-7 StreamInterface implementation.
 ## Requirements
 
 - PHP: `^7.1 || ^8.0`
+- [guzzlehttp/psr7](https://github.com/guzzle/psr7): `^1.7`
 
 ## Installing
 
