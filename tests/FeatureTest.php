@@ -6,7 +6,7 @@ use ArrayIterator;
 use Mpyw\StreamInterfaceResource\StreamInterfaceResource;
 use PHPUnit\Framework\TestCase;
 
-class StreamInterfaceResourceTest extends TestCase
+class FeatureTest extends TestCase
 {
     public function testString(): void
     {
