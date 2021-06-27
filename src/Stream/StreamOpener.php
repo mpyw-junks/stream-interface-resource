@@ -2,6 +2,7 @@
 
 namespace Mpyw\StreamInterfaceResource\Stream;
 
+use GuzzleHttp\Psr7\Utils;
 use Mpyw\StreamInterfaceResource\Registry\StreamRegistrarInterface;
 use Mpyw\StreamInterfaceResource\Unserializable;
 use Psr\Http\Message\StreamInterface;
@@ -27,6 +28,6 @@ class StreamOpener implements StreamOpenerInterface
     {
         $this->registrar->register($stream);
 
-        return \fopen($this->registrar->pathFor($stream), '');
+        return Utils::tryFopen($this->registrar->pathFor($stream), '');
     }
 }
