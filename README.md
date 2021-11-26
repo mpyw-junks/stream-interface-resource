@@ -1,3 +1,16 @@
+**DEPRECATED: This package has been abandoned. Use [guzzlehttp/psr7](https://github.com/guzzle/psr7) bulit-in methods instead.**
+
+```php
+<?php
+
+use GuzzleHttp\Psr7\StreamWrapper;
+use GuzzleHttp\Psr7\Utils;
+
+$fp = StreamWrapper::getResource(Utils::streamFor("a\nbcd\n"));
+```
+
+-----
+
 # Stream Interface Resource [![Build Status](https://github.com/mpyw/stream-interface-resource/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/mpyw/stream-interface-resource/actions) [![Coverage Status](https://coveralls.io/repos/github/mpyw/stream-interface-resource/badge.svg?branch=master)](https://coveralls.io/github/mpyw/stream-interface-resource?branch=master) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/mpyw/stream-interface-resource/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/mpyw/stream-interface-resource/?branch=master)
 
 Create resource stream from PSR-7 StreamInterface implementation.
